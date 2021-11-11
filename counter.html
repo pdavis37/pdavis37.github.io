@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+
+	<div id="priester"></div>
+	<script type="text/javascript">
+			var thing = 0;
+			var box = document.getElementById('priester');
+
+
+			function addition() {
+				console.log(thing);
+				box.innerText = thing;
+				thing = thing + 1 
+
+		}
+			addition(thing)
+			document.addEventListener("click", addition)
+		
+	</script>
+
+</body>
+</html>

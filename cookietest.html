@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
+	<style type="text/css">
+		
+		h1{
+			text-align: center;
+			font-family: 'Red Hat Mono', monospace;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+
+<h1>Click to change to Carl</h1>
+	<script type="text/javascript">
+		
+		document.body.style.backgroundColor = "pink"
+	function makesquidward (){
+	var squidward = document.createElement("div")
+	document.body.appendChild(squidward);
+	squidward.style.backgroundImage = "url(https://static.tvtropes.org/pmwiki/pub/images/squidward_tentacles_91.png)";
+	squidward.style.height = "150px";
+	squidward.style.width = "150px";
+	squidward.style.backgroundSize = "contain";
+	squidward.style.display = "inline-block";
+
+	squidward.addEventListener("click",function(){
+		squidward.style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/_j91sPIeG71Cx6Q76FTPrbyvFA9xjcm5_8fq5dRFxZg_T9vbatpXIAD0EIbliLEMUa7hfNGcU-fi1kT4WUpniChq85tnsprvGyRoTsJv8fNjbbJGBcY)"
+
+	})
+} 
+
+makesquidward()
+
+setInterval(makesquidward,1000);
+
+
+</script>
+	
+</div>
+</body>
+</html>
