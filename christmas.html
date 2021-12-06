@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Red+Hat+Mono&family=Uchen&display=swap" rel="stylesheet">
+	<title></title>
+
+	<style type="text/css">
+		#text {
+		opacity: 0;
+		font-size:100px;
+		color:black;
+		position:absolute;
+		left:450px;
+		top:-120px;
+		font-family: 'Uchen', serif;
+		}
+		body {
+		background-image:url(https://i.pinimg.com/originals/ba/5b/61/ba5b613b625e1013284f588943cd6e15.gif);
+		background-size:cover;
+		}
+		#santa {
+		background-image:url(https://i.pinimg.com/originals/fb/6b/23/fb6b237710b4f6d10855359a4de5e65f.gif);
+		background-size:cover;
+		height:250px;
+		width:400px;
+		position:absolute;
+		top:125px;
+		left:75px;
+		}
+		#children {
+		background-image:url(christmas.png);
+		height:400px;
+		width:450px;
+		position:absolute;
+		background-size:cover;
+		top:370px;
+		left:770px;
+		}
+		#homer {
+		background-image:url(https://i1.wp.com/tstoaddicts.com/wp-content/uploads/2013/12/homer_make_a_snowman_out.gif);
+		height:210px;
+		width:150px;
+		position:absolute;
+		background-size:cover;
+		top:500px;
+		left:250px;
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<script type="text/javascript">
+		function placeText () {
+			var text = document.getElementById("text");
+			text.style.opacity="1";
+		}
+		document.addEventListener("click", placeText)
+	</script>
+	
+<div id="santa"></div><div id="children"></div><div id="homer"></div></div>
+<p id="text">Merry Christmas</p>
+</body>
+</html>
