@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	#background {
+		height:900px;
+		width:1425px;
+		background-image: url(https://media-api.xogrp.com/images/7f87c7c1-7fad-433b-b78f-7a633bc1c73a~cr_0.0.1619.1085?quality=50);
+		background-size: contain;
+		background-image: no-repeat;
+	}	
+	#bear {
+		height:550px;
+		width:600px;
+		background-image: url(rosebear.png);
+		background-size: contain;
+		position: relative;
+		top:275px;
+		background-image: no-repeat;
+	}
+	#text {
+		color:white;
+		position: relative;
+		top:150px;
+		font-size:85px;
+	}
+
+	</style>
+	<title></title>
+</head>
+<body>
+<div id="background">
+	<center><div id="text">
+	Happy Valentines!
+	</div></center>
+	<center><div id="bear"></div></center>
+
+</div>
+<script type="text/javascript">
+
+var bear = document.
+getElementById("bear");
+
+bear.addEventListener("mouseenter", function(event){
+console.log("hi?");
+bear.style.backgroundImage="url(https://shop.hersheys.com/dw/image/v2/BCVS_PRD/on/demandware.static/-/Sites-master-us/default/dw0c7fcdd1/images/hi-res/hsy-019700_1.png?sw=700&sh=700&sm=fit)";
+
+
+})
+
+bear.addEventListener("mouseout", function(event){
+console.log("hi?");
+bear.style.backgroundImage="url(rosebear.png)";
+
+
+})
+
+</script>
+</body>
+</html>

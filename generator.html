@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        button{
+            width: 200px;
+            height: 50px;
+            font-size: 20px
+        }
+        #image{
+            width: 500px;
+            height: 500px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:solid black 2px
+            ;
+        }
+    </style>
+</head>
+
+<body>
+   
+        <button  id="button"
+>Choose a Seahawks Member!
+        </button>
+<div id="image"></div>
+        <script type="text/javascript">
+            
+var button = document.getElementById('button');
+var image = document.getElementById("image");
+
+            	var team = ["url(https://cdn131.picsart.com/325450196018211.png)", "url(http://successmentor.com/wp-content/uploads/2015/01/Russell-WIlson-glorifies-God-transparent-272x300.png)", "url(https://images.squarespace-cdn.com/content/v1/5c89c0917980b338b951cd3f/1571938835807-G4Z0K2ITKXFATSOTMDOB/Tyler+Lockett.png?format=1000w)", "url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bff224d0-addd-486b-ba55-76cfa8aff7ea/dcod4n4-ac0dd352-a9f6-446a-a6f1-bea4aa52b85f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JmZjIyNGQwLWFkZGQtNDg2Yi1iYTU1LTc2Y2ZhOGFmZjdlYVwvZGNvZDRuNC1hYzBkZDM1Mi1hOWY2LTQ0NmEtYTZmMS1iZWE0YWE1MmI4NWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.M-uWCoKJWT95WE4vV5eGsUrhHlnT-ViFvHFLaaiXeTA)", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Jamal_Adams.jpg/800px-Jamal_Adams.jpg)", "url(https://cdn.sportsforecaster.com/players/l.nfl.com/117901/head/no-background/web)", "url(https://cdn.sportsforecaster.com/players/l.nfl.com/103729/head/no-background/web)", "url(https://ih1.redbubble.net/image.1678286755.6726/tst,small,507x507-pad,600x600,f8f8f8.jpg)"];
+
+button.addEventListener(
+    "click", function chooseTeam(){
+var randomNumber = Math.round(Math.random()*8);
+    
+
+image.style.backgroundImage = team[randomNumber];
+    console.log(randomNumber);
+});
+
+
+            	//function has 3 parts: 1. generating a random whole number between and including 0 and 7. 2. set the background image of a div to the array[IN HERE IS THE RANDOM NUMBER] (because when you put a number with the name of an array between those square brackets, it referes to that number element in the array.) 
+            </script>
+</body>
+
+</html>
